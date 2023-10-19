@@ -277,47 +277,47 @@
 <!-- 滑到固定位置才會做animate效果-- wow.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
-  const allContainer = document.getElementsByClassName('container')
-  let curPage = 1
-  const screenHeight = window.innerHeight
-  let scrollLock = false
-  // 偵測滑鼠滾輪滾動
-  const scrollPage = () => {
-    document.addEventListener('mousewheel', (e) => {
-      if (scrollLock) return;
-      if (e.wheelDeltaY > 0) {
-        navigateUp()
-      } else {
-        navigateDown()
-      }
-    })
-  }
-  // const keyboardPage = () => {
-  //   document.addEventListener('keydown',(e)=>{
-  //     console.log(e.keyCode === 40)
-  //     if(e.keyCode === 38 ){
+  // const allContainer = document.getElementsByClassName('container')
+  // let curPage = 1
+  // const screenHeight = window.innerHeight
+  // let scrollLock = false
+  // // 偵測滑鼠滾輪滾動
+  // const scrollPage = () => {
+  //   document.addEventListener('mousewheel', (e) => {
+  //     if (scrollLock) return;
+  //     if (e.wheelDeltaY > 0) {
   //       navigateUp()
-  //     }
-  //     else if(e.keyCode === 40 ){
+  //     } else {
   //       navigateDown()
   //     }
   //   })
   // }
+  // // const keyboardPage = () => {
+  // //   document.addEventListener('keydown',(e)=>{
+  // //     console.log(e.keyCode === 40)
+  // //     if(e.keyCode === 38 ){
+  // //       navigateUp()
+  // //     }
+  // //     else if(e.keyCode === 40 ){
+  // //       navigateDown()
+  // //     }
+  // //   })
+  // // }
 
-  const navigateUp = () => {
-    window.scrollBy({
-      top: -screenHeight,
-      behavior: 'smooth'
-    })
-  }
-  const navigateDown = () => {
-    // if (curPage === allContainer.length) return;
-    window.scrollBy({
-      top: screenHeight,
-      behavior: 'smooth'
-    })
-  }
-  scrollPage()
+  // const navigateUp = () => {
+  //   window.scrollBy({
+  //     top: -screenHeight,
+  //     behavior: 'smooth'
+  //   })
+  // }
+  // const navigateDown = () => {
+  //   // if (curPage === allContainer.length) return;
+  //   window.scrollBy({
+  //     top: screenHeight,
+  //     behavior: 'smooth'
+  //   })
+  // }
+  // scrollPage()
   // keyboardPage()
 
   // 打字效果
